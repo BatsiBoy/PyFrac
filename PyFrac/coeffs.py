@@ -61,10 +61,10 @@ def rand(scale=1,minf=0.05,sym=None):
     randrows = int(np.ceil(np.random.random() * 4)) + 1  #Between 1 and 5 rows
     randarray = []  #Empty return list
 
-    for rows in range(randrows):
+    for _ in range(randrows):
         workrow = []
         workrow.append(int(np.ceil((np.random.random() * 10))))  #Add random weight from (1,10)
-        for coe in range(6):
+        for _ in range(6):
             newcoeff = (np.cos(np.random.random()*np.pi)) * scale  #cos(x) for [0,pi]
             if newcoeff < minf and newcoeff > -0.05:  #within minimum magnitude
                 newcoeff == np.clip(newcoeff,-minf,minf)  #Enforce minimum factor rule
