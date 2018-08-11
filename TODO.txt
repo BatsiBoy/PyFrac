@@ -1,0 +1,6 @@
+PyFrac TODO list:
+
+Create setup.py
+Create detailed tests
+Profile and optimize core engine
+Refactor example visual
